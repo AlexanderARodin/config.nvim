@@ -1,13 +1,13 @@
 local opt = vim.opt
 
-opt.encoding				= 'utf-8'
+opt.encoding		= 'utf-8'
 opt.mouse               = 'a'
 
 opt.syntax              = 'on'
 opt.filetype            = 'on'
 opt.filetype.plugin     = 'on'
 
-opt.colorcolumn         = '70'
+opt.colorcolumn         = '90'
 opt.cursorline          = true
 -- opt.cursorcolumn        = true
 

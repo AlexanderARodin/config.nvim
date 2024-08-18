@@ -143,3 +143,7 @@ cmp.setup({
 
 -- require('nvim-tree').setup{}
 
+-- learning pluginning
+-- require('raa-xample').setup{ a = 3 }
+
+

@@ -51,6 +51,12 @@ require('pckr').add{
 		after = { "hrsh7th/nvim-cmp" },
 		requires = { "hrsh7th/nvim-cmp" },
 	};
+	
+	-- game 'vim-be-good'
+	'ThePrimeagen/vim-be-good';
+
+	-- test plugin
+	-- 'learning-raa/learn-lua-pluging-nvim';
 
 }
 

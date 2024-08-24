@@ -31,7 +31,7 @@ require('pckr').add{
 	'williamboman/mason-lspconfig.nvim';
 
 	'neovim/nvim-lspconfig';
- 	'simrat39/rust-tools.nvim';
+	'simrat39/rust-tools.nvim';
 
 	-- Completion framework:
 	'hrsh7th/nvim-cmp';
@@ -43,7 +43,7 @@ require('pckr').add{
 		"hrsh7th/cmp-vsnip",
 		-- cmp Path completion
 		"hrsh7th/cmp-path",
-	--	'hrsh7th/cmp-cmdline',
+		-- 'hrsh7th/cmp-cmdline',
 		"hrsh7th/cmp-buffer",
 		'hrsh7th/vim-vsnip',
 		'hrsh7th/cmp-nvim-lua',

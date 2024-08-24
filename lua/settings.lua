@@ -19,21 +19,23 @@ opt.incsearch           = true
 
 --
 -- tabs & spaces
+--
 opt.tabstop     = 4 -- visual tab width (default=8)
 opt.shiftwidth  = 4 -- positions for Shift+> & Shift+<
-opt.expandtab   = true -- replace tab with space(s)
+opt.expandtab   = false -- replace tab with space(s)
 
 opt.list        = true
 opt.listchars:append {
-    -- tab  = "│┈",
-    -- tab  = "▒░",
-    multispace  = " ",
-    lead        = " ",
-    trail       = "·",
-    nbsp        = "‿",
-    extends     = "▶", -- if nowrap
-    precedes    = "◀", -- if nowrap
-    -- eol = "¶"
+	tab			= "> ",
+	-- tab			= "│┈",
+	-- tab		= "▒░",
+	multispace	= " ",
+	lead		= " ",
+	trail		= "·",
+	nbsp        = "‿",
+	extends     = "▶", -- if nowrap
+	precedes    = "◀", -- if nowrap
+	-- eol = "¶"
 }
 
 -- Автодополнение (встроенное в Neovim)

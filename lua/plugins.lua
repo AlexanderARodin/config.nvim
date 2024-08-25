@@ -24,6 +24,13 @@ require('pckr').add{
 	{ 'nvim-lualine/lualine.nvim',
 		dependencies = { 'nvim-tree/nvim-web-devicons' }
 	};
+
+	-- color scheme
+	'mellow-theme/mellow.nvim';
+
+	-- tree-sitter
+	'nvim-treesitter/nvim-treesitter';
+
 	-- bot right background loading INFO
 	'j-hui/fidget.nvim';
 

@@ -25,6 +25,9 @@ require('pckr').add{
 		dependencies = { 'nvim-tree/nvim-web-devicons' }
 	};
 
+	-- Toggle Terminal
+	'akinsho/toggleterm.nvim';
+
 	-- color scheme
 	'mellow-theme/mellow.nvim';
 

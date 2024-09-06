@@ -1,6 +1,7 @@
 
 require('lualine').setup{}
 require('fidget').setup{}
+require('toggleterm').setup{}
 
 -- treesitter
 require("nvim-treesitter.configs").setup({

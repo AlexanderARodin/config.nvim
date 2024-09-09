@@ -1,5 +1,5 @@
 require('plugins')
-require('settings')
+-- require('settings') -- moved to opt.lua
 require('keymaps')
 
 

@@ -7,6 +7,10 @@ git clone https://github.com/AlexanderARodin/config.nvim.git ~/.config/nvim --de
 ```
 git clone git@github.com:AlexanderARodin/config.nvim.git ~/.config/nvim --depth 1
 ```
+## Required
+```
+rustup component add rust-analyzer
+```
 
 ---
 

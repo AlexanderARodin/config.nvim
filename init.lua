@@ -1,12 +1,10 @@
-require('plugins')
--- require('settings') -- moved to opt.lua
+-- core settings
+require('opt')
 require('keymaps')
 
 
+-- Manager of Plugins
+require('plugins')
 -- PLUGINS
 require('setups')
 
-
-
-
-require('opt')

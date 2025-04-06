@@ -38,6 +38,10 @@ opt.listchars:append {
 	-- eol             = "¶"
 }
 
+vim.cmd([[
+colorscheme slate
+]])
+
 
 --Set completeopt to have a better completion experience
 -- :help completeopt
@@ -46,17 +50,38 @@ opt.listchars:append {
 -- noselect: Do not select, force to select one from the menu
 -- shortness: avoid showing extra messages when using completion
 -- updatetime: set updatetime for CursorHold
-opt.completeopt = {'menuone', 'noselect', 'noinsert'}
-opt.shortmess = vim.opt.shortmess + { c = true}
-vim.api.nvim_set_option('updatetime', 300) 
+--- opt.completeopt = {'menuone', 'noselect', 'noinsert'}
+--- opt.shortmess = vim.opt.shortmess + { c = true}
+--- vim.api.nvim_set_option('updatetime', 1500) 
 
 -- Fixed column for diagnostics to appear
 -- Show autodiagnostic popup on cursor hover_range
 -- Goto previous / next diagnostic warning / error 
 -- Show inlay_hints more frequently 
-vim.cmd([[
-set signcolumn=yes
-colorscheme mellow
-autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
-]])
+--- vim.cmd([[
+--- set signcolumn=yes
+--- autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
+--- ]])
 
+
+
+-- ---@type Ollama.Config
+-- opts = {
+-- 	model = "llama3.1:8b",
+-- 	url = "http://172.20.237.177:11434",
+-- 	serve = {
+-- 		on_start = false,
+-- 		command = "ollama",
+-- 		args = { "serve" },
+-- 		stop_command = "pkill",
+-- 		stop_args = { "-SIGTERM", "ollama" },
+-- 	},
+-- 	prompts = {
+-- 		Sample_Prompt = {
+-- 			prompt = "This is a sample prompt that receives $input and $sel(ection), among others.",
+-- 			input_label = "> ",
+-- 			model = "llama3.1:8b",
+-- 			action = "display",
+-- 		}
+-- 	}
+-- }

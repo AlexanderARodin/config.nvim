@@ -1,8 +1,3 @@
-
-require('lualine').setup{}
-require('fidget').setup{}
-require('toggleterm').setup{}
-
 -- treesitter
 require("nvim-treesitter.configs").setup({
 	ensure_installed = { 'lua', 'rust', 'toml' },
@@ -19,7 +14,6 @@ require("nvim-treesitter.configs").setup({
 	}
 })
 
-
 -- Mason Setup
 -- after all needs :MasonInstall rust-analyzer codelldb
 require("mason").setup({
@@ -32,7 +26,6 @@ require("mason").setup({
 	}
 })
 require("mason-lspconfig").setup()
-
 
 
 
@@ -51,19 +44,6 @@ lspconfig.rust_analyzer.setup( {
 } )
 
 
-local rt = require("rust-tools")
-rt.setup({
-	server = {
-	on_attach = function(_, bufnr)
-	  -- Hover actions
-	  vim.keymap.set("n", "<C-space>", rt.hover_actions.hover_actions, { buffer = bufnr })
-	  -- Code action groups
-	  vim.keymap.set("n", "<Leader>a", rt.code_action_group.code_action_group, { buffer = bufnr })
-	end,
-	},
-})
-
-
 -- LSP Diagnostics Options Setup 
 local sign = function(opts)
 	vim.fn.sign_define(opts.name, {
@@ -78,21 +58,21 @@ sign({name = 'DiagnosticSignWarn', text = ''})
 sign({name = 'DiagnosticSignHint', text = ''})
 sign({name = 'DiagnosticSignInfo', text = ''})
 
+--[[
 vim.diagnostic.config({
-	virtual_text = false, signs = true, update_in_insert = true, underline = true, severity_sort = false, float = {
+	virtual_text = true, -- inline error/warning description
+	signs = true,
+	update_in_insert = true,
+	underline = true,
+	severity_sort = false,
+	float = {
 		border = 'rounded',
 		source = 'always',
 		header = '',
 		prefix = '',
 	},
 })
-
-vim.cmd([[
-set signcolumn=yes
-autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
-]])
-
-
+]]
 
 
 -- Completion Plugin Setup
@@ -105,8 +85,6 @@ cmp.setup({
     end,
   },
   mapping = {
-    ['<C-p>'] = cmp.mapping.select_prev_item(),
-    ['<C-n>'] = cmp.mapping.select_next_item(),
     -- Add tab support
     ['<S-Tab>'] = cmp.mapping.select_prev_item(),
     ['<Tab>'] = cmp.mapping.select_next_item(),
@@ -149,11 +127,18 @@ cmp.setup({
 })
 
 
+-- UI etc
+require('lualine').setup{}
+require('fidget').setup{}
+require('toggleterm').setup{}
+
+-- -- ollama plugin and dependency
+-- require('ollama').setup{}
+
+
+-- require('plenary').setup{}
 
 
 -- require('nvim-tree').setup{}
-
--- learning pluginning
--- require('raa-xample').setup{ a = 3 }
 
 

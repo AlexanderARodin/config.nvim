@@ -21,7 +21,6 @@ local keys = require('pckr.loader.keys')
 
 require('pckr').add{
 --	-- try ollama.nvim
---	'nvim-lua/plenary.nvim';
 --	{ 'nomnivore/ollama.nvim',
 --		dependencies = { 'nvim-lua/plenary.nvim' },
 --		cmd = { "Ollama", "OllamaModel", "OllamaServe", "OllamaServeStop" },
@@ -47,6 +46,8 @@ require('pckr').add{
 	};
 	-- Toggle Terminal
 	'akinsho/toggleterm.nvim';
+	-- nvim-tree
+	'nvim-tree/nvim-tree.lua';
 	
 	-- tree-sitter
 	'nvim-treesitter/nvim-treesitter';

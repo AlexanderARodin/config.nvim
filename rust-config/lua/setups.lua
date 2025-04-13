@@ -132,10 +132,8 @@ require('lualine').setup{}
 require('fidget').setup{}
 require('toggleterm').setup{}
 
+require('nvim-tree').setup{}
+
 -- -- ollama plugin and dependency
 -- require('ollama').setup{}
 
-
--- require('plenary').setup{}
-
--- require('nvim-tree').setup{}

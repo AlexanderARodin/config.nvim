@@ -16,5 +16,4 @@ end
 -- by RAA
 -- main key binds
 map('i', 'jk', '<ESC>', {})
--- map('n', '<C-n>', [[:NvimTreeToggle<CR>]], {})
 

@@ -132,7 +132,9 @@ require('lualine').setup{}
 require('fidget').setup{}
 require('toggleterm').setup{}
 
-require('nvim-tree').setup{}
+require('nvim-tree').setup{
+	vim.api.nvim_set_keymap('n', '<C-n>', [[:NvimTreeToggle<CR>]], {})
+}
 
 -- -- ollama plugin and dependency
 -- require('ollama').setup{}

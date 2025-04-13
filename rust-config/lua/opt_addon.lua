@@ -1,0 +1,20 @@
+-- ---@type Ollama.Config
+-- opts = {
+-- 	model = "llama3.1:8b",
+-- 	url = "http://172.20.237.177:11434",
+-- 	serve = {
+-- 		on_start = false,
+-- 		command = "ollama",
+-- 		args = { "serve" },
+-- 		stop_command = "pkill",
+-- 		stop_args = { "-SIGTERM", "ollama" },
+-- 	},
+-- 	prompts = {
+-- 		Sample_Prompt = {
+-- 			prompt = "This is a sample prompt that receives $input and $sel(ection), among others.",
+-- 			input_label = "> ",
+-- 			model = "llama3.1:8b",
+-- 			action = "display",
+-- 		}
+-- 	}
+--}

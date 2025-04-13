@@ -138,7 +138,4 @@ require('toggleterm').setup{}
 
 -- require('plenary').setup{}
 
-
 -- require('nvim-tree').setup{}
-
-

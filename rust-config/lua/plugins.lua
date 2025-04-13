@@ -77,13 +77,6 @@ require('pckr').add{
 		requires = { "hrsh7th/nvim-cmp" },
 	};
 
-
---	-- color scheme
---	'mellow-theme/mellow.nvim';
-
 --	-- game 'vim-be-good'
 --	'ThePrimeagen/vim-be-good';
 }
-
-
-

@@ -17,7 +17,6 @@ rustup component add rust-analyzer
 NVIM_APPNAME=nvim/rust-config nvim
 ```
 
-
 ---
 
 source: https://rsdlt.github.io/posts/rust-nvim-ide-guide-walkthrough-development-debug/

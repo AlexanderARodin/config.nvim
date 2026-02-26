@@ -53,10 +53,14 @@ local sign = function(opts)
 	})
 end
 
-sign({name = 'DiagnosticSignError', text = ''})
-sign({name = 'DiagnosticSignWarn', text = ''})
-sign({name = 'DiagnosticSignHint', text = ''})
-sign({name = 'DiagnosticSignInfo', text = ''})
+-- sign({name = 'DiagnosticSignError', text = ''})
+-- sign({name = 'DiagnosticSignWarn', text = ''})
+-- sign({name = 'DiagnosticSignHint', text = ''})
+-- sign({name = 'DiagnosticSignInfo', text = ''})
+sign({name = 'DiagnosticSignError', text = '𝔼'})
+sign({name = 'DiagnosticSignWarn', text = '𝕎'})
+sign({name = 'DiagnosticSignHint', text = 'ℍ'})
+sign({name = 'DiagnosticSignInfo', text = '𝕚'})
 
 --[[
 vim.diagnostic.config({

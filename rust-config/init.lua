@@ -9,3 +9,6 @@ require('plugins')
 -- PLUGINS setup
 require('setups')
 
+vim.cmd([[
+colorscheme koehler
+]])

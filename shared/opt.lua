@@ -7,7 +7,7 @@ opt.syntax          = 'on'
 opt.filetype        = 'on'
 opt.filetype.plugin = 'on'
 
-opt.colorcolumn     = '90'
+opt.colorcolumn     = '80'
 opt.cursorline      = true
 opt.cursorcolumn    = true
 
